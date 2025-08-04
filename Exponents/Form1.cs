@@ -39,25 +39,23 @@ namespace Exponents
             int squareAnswer = Square(num);
             UxOutputLabel.Text = "Square is " + squareAnswer.ToString();
 
-
-            /* calculate the cube of the number and add it to the output - 
-             * do this by creating a methd as in the squaring example above */
+            //* calculate the cube of the number and add it to the output - 
+             /* do this by creating a methd as in the squaring example above */
 
             // OUTPUT
             // set the output to visible
             UxOutputLabel.Visible = true;
 
-
-            // turn the Go button off
-
-
+             // turn the Go button off
+               UxGoButton.Enabled = false;
         }
 
-        public int Square(int num)
+        public int Square(int num) // Square(3)
         {
             // we will create this code in class
             return num * num;
         }
+
         //public int Cube(int num)
         //{
         //    // we will create this code in class
@@ -66,13 +64,11 @@ namespace Exponents
         private void xResetButton_Click(object sender, EventArgs e)
         {
             // the input and output text should be emptied
-            // turn the output to invisible
-            // turn the Go button back on
-        }
+            UxInputTextBox.Clear();
+            UxOutputLabel.Text = "";
 
-        private void UxGoButton_Click(object sender, EventArgs e)
-        {
-          
-        }
+            // turn the output to invisible
+            // turn the Go button back on  
+        } 
     }
 }
