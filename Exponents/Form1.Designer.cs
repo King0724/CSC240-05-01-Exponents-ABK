@@ -71,11 +71,11 @@
             this.UxGoButton.TabIndex = 6;
             this.UxGoButton.Text = "Go!";
             this.UxGoButton.UseVisualStyleBackColor = true;
-            this.UxGoButton.Click += new System.EventHandler(this.UxGoButton_Click);
+            this.UxGoButton.Click += new System.EventHandler(this.xGoButton_Click);
             // 
             // UxResetButton
             // 
-            this.UxResetButton.Location = new System.Drawing.Point(140, 261);
+            this.UxResetButton.Location = new System.Drawing.Point(139, 316);
             this.UxResetButton.Margin = new System.Windows.Forms.Padding(4);
             this.UxResetButton.Name = "UxResetButton";
             this.UxResetButton.Size = new System.Drawing.Size(100, 28);
@@ -88,7 +88,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(379, 322);
+            this.ClientSize = new System.Drawing.Size(379, 370);
             this.Controls.Add(this.UxResetButton);
             this.Controls.Add(this.UxGoButton);
             this.Controls.Add(this.UxOutputLabel);
